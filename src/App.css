@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
+body{
+  padding:0px;
+  margin-top:0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.avatar{
+  width:4vw;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.end{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:2vw;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
+  background-color: rgb(235, 235, 251); 
+   border-bottom: solid 1px black;
+   padding-bottom: 15px;
+}
+.main-body{
+  display: flex;
+  width:100%;
+  min-height: 87vh;
+}
+.left{
+  width:50%;
+  height:87vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+}
+.right{
+  margin-top: 15vh;
+  width:50%;
+  height:87vh;
+}
+.gallery{
+  width:200px;
+  height:40vh;
+  margin-top: 10vh;
+}
+.product-logo{
+  display: flex;
+gap:10px;
+}
+.img-logo{
+  width:50px;
+  border-radius: 10px;
+}
+.main-img{
+  width:100%;
+  height:40vh;
+  border-radius: 6px;
+}
+.quantity{
+  display: flex;
+  gap:2vh
+}
+.submit-section{
+  display: flex;
+  gap:2vw
+}
+.cart-header{
+  width:100%;
+  min-height:10vh;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.sneaker-company{
+  color:orange;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.decrease{
+  width:30px;
+  border-radius: 6vw;
+  border:solid 1px yellow;
+  background-color: yellowgreen;
+  color:white
+}
+.decreas{
+  width:30px;
+  border-radius: 6vw;
+  border:solid 1px yellow;
+  color:white
+}
+.warning{
+  color:rgb(33, 221, 33);
+  font-family: Arial, Helvetica, sans-serif
+}
+.total-item{
+  color:aqua
 }
 
-.App-link {
-  color: #61dafb;
+.buy{
+  background-color: lightgreen;
+  border:none;
+  width:50px;
+  height:40px;
+  border-radius: 20px;
+  color:black
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.remove{
+  background-color: red;
+  border:none;
+  height:40px;
+  border-radius: 20px;
+}
+.empty{
+  width:100%;
+  min-height:90vh;
+display: flex;
+align-items: center;
+justify-content: center;
+color:red;
+gap:3vw
+}
+.main-cart{
+  display: none;
+}
+@media(max-width:360px){
+.right{
+  margin-top:0px;
+}
+.gallery{
+  width:140px;
+  height:24vh;
+  margin-top: 0vh;
+}
+.main-img{
+  height: 24vh;
+}
+.img-logo{
+  width:27px;
+  border-radius: 5px;
+  
+}
+.product-logo{
+  gap:1vw
+}
+.left{
+  justify-content: space-evenly;
+  height: 50vh;
+}
+.submit-section{
+  flex-direction: column;
+}
+.add-to-cart{
+  width:150px;
+}
+.main-cart{
+  display:block;
+}
 }
